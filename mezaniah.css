@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f5f3;
+}
+
+.title {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header {
+    background-color: green;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+}
+
+.main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main input{
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 50%;
+    transition: 0.3s;
+}
+
+.main input:hover {
+    border-color: green;
+}
+
+.main input:focus {
+    outline: none;
+    border: 2px solid green;
+}
+
+.person-cost{
+    background-color: lightgreen;
+    border: 2px solid green;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    padding: 15px;
+    
+}
+
+.total {
+    background-color: lightgreen;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+} 
+
+.total,
+.person-cost {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.total p, .person-cost p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.input-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.input-content {
+    width: 100%;
+}
+
+.input-content label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    
+
+}
+
+.input-content input {
+    width: 100%;
+}
+
+
+.icon-btn {
+    padding: 10px 15px;
+    background-color: white;
+    color: green;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icon-btn:hover {
+    background-color: lightgreen;
+}
+
+body.dark-mode {
+    background-color: #1e1e2e;
+    color: white;
+}
+
+body.dark-mode .packing-list {
+    background-color: #2d2d3f;
+}
+
+body.dark-mode li {
+    background-color: #3a3a50;
+    color: white;
+}
+
+body.dark-mode h2 {
+    color: #90d6a8;
+}
+
+body.dark-mode .icon-btn {
+    background-color: #2d2d3f;
+    color: white;
+}
+

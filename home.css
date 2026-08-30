@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-title {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navagation {
+    display: flex;
+    gap: 25px;
+}
+
+.nava {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nava:hover {
+    color: #c8f7c5;
+}
+
+
+
+.hero {
+    min-height: 90vh;
+    background-image: url("images/travel.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding-right: 8%;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: darkgreen;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 22px;
+    color: darkgreen;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hero h1,
+.hero p {
+    text-align: right;
+    width: 45%;
+}
+
+

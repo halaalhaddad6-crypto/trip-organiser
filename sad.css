@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f5f3;
+    color: #222;
+
+    --border-color: #ccc;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navbar {
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.icon-btn {
+    border: none;
+    background-color: white;
+    color: green;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.icon-btn:hover {
+    background-color: lightgreen;
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.but a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 110px;
+    padding: 8px;
+
+    border: 2px solid gray;
+    border-radius: 7px;
+
+    box-shadow: var(--shadow);
+
+    transition: 0.3s;
+}
+
+.but a:hover {
+    background-color: lightgreen;
+    transform: translateY(-2px);
+}
+
+.a {
+    background-color: green;
+    color: white !important;
+}
+
+.every {
+    width: 90%;
+    margin: 0 auto 40px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.hebron,
+.hebronre,
+.jursre,
+.jurs,
+.beat,
+.beatre,
+.hebronnu,
+.beatnu {
+    width: 220px;
+
+    background-color: white;
+
+    border: 2px solid gray;
+    border-radius: 9px;
+
+    box-shadow: var(--shadow);
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.hebron:hover,
+.hebronre:hover,
+.jursre:hover,
+.jurs:hover,
+.beat:hover,
+.beatre:hover,
+.hebronnu:hover,
+.beatnu:hover {
+    transform: translateY(-5px);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.details-btn {
+    display: block;
+}
+
+.every img {
+    width: 100%;
+    height: 200px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    text-align: right;
+}
+
+.every p {
+    font-size: 16px;
+    margin: 5px 10px 15px;
+    color: #666;
+}
+
+.badge {
+    background-color: darkgoldenrod;
+
+    width: 66px;
+    min-width: 35px;
+
+    font-size: 16px;
+    text-align: center;
+
+    display: inline-block;
+
+    border: 2px solid darkgoldenrod;
+    border-radius: 3px;
+
+    margin: 5px 10px;
+
+    padding: 4px 6px;
+
+    color: white;
+}
+
+
+.ba {
+    background-color: rgb(36, 109, 102);
+
+    width: 66px;
+    min-width: 35px;
+
+    font-size: 16px;
+    text-align: center;
+
+    display: inline-block;
+
+    border: 2px solid rgb(36, 109, 102);
+    border-radius: 3px;
+
+    margin: 5px 10px;
+
+    padding: 4px 6px;
+
+    color: white;
+}
+
+
+.b {
+    background-color: rgb(170, 89, 73);
+
+    width: 66px;
+    min-width: 35px;
+
+    font-size: 16px;
+    text-align: center;
+
+    display: inline-block;
+
+    border: 2px solid rgb(170, 89, 73);
+    border-radius: 3px;
+
+    margin: 5px 10px;
+
+    padding: 4px 6px;
+
+    color: white;
+}
+
+body.dark-mode {
+    background-color: #1e1e2e;
+    color: #f5f5f5;
+
+    --border-color: #44445c;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .hebron,
+body.dark-mode .hebronre,
+body.dark-mode .jursre,
+body.dark-mode .jurs,
+body.dark-mode .beat,
+body.dark-mode .beatre,
+body.dark-mode .hebronnu,
+body.dark-mode .beatnu {
+    background-color: #2d2d3f;
+    border-color: #44445c;
+}
+
+body.dark-mode .every p {
+    color: #ccc;
+}
+
+body.dark-mode .but a {
+    color: white;
+    border-color: #44445c;
+}
+
+body.dark-mode .but a:hover {
+    background-color: #3d5f3d;
+}
+
+body.dark-mode .icon-btn {
+    background-color: #2d2d3f;
+    color: white;
+    border: 1px solid #44445c;
+}
+
+.next-btn,
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    margin: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.next-btn {
+    background-color: green;
+    color: white;
+}
+
+.next-btn:hover {
+    background-color: darkgreen;
+}
+
+.back-btn {
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+}
+
+.back-btn:hover {
+    background-color: lightgreen;
+}
+
